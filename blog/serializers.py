@@ -8,7 +8,7 @@ class CreateBlogSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Blog
-        fields = ['title', 'description', 'image', 'active']
+        fields = ['id','title', 'description', 'image', 'active']
 
 
 
@@ -17,5 +17,5 @@ class BlogSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Blog
-        fields = '__all__'
+        fields = ['id','title', 'description', 'image', 'active', 'updated_at', 'created_at']
 
